@@ -1,10 +1,12 @@
+.claude
+
 # Python
 backend/.venv/
 __pycache__/
 *.py[cod]
 *.egg-info/
 .env
-.claude
+
 
 # Node / Expo
 frontend/node_modules/
