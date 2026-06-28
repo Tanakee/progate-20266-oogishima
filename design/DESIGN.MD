@@ -1,6 +1,8 @@
-# DESIGN.md — 
+# DESIGN.md
 
 > 旅先でスタンプを押し、思い出を残すモバイルアプリのデザイン仕様書。
+
+> UIの実際のデザイン（カラーUI）は [`design/color-ui.pen`](color-ui.pen) に定義されている。
 
 ---
 
