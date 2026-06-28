@@ -5,4 +5,21 @@
 UIコードを生成する際は、DESIGN.MD に定義されたビジュアルデザインシステムに必ず従ってください
 
 ## コンポーネント作成時のルール
-新しいUIコンポーネントを作成する前に、必ず `architecture.md` を読んでルールを確認すること
+
+新しいUIコンポーネントを作成する前に、必ず `front-architecture.md` を読んでルールを確認すること
+
+## 仕様書
+
+プロジェクトの仕様書は `docs/REQUIREMENTS.md` に記載されている
+
+## ディレクトリ構成
+
+このリポジトリはフロントエンドとバックエンドをモノレポで管理する。
+
+```text
+/
+├── frontend/   # React Native / Expo アプリ (TypeScript)
+├── backend/    # Python / FastAPI サーバー
+├── docs/       # 仕様書・アーキテクチャドキュメント
+└── design/     # デザインファイル・スタイルガイド
+```
