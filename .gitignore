@@ -1,0 +1,15 @@
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Node / Expo
+frontend/node_modules/
+frontend/.expo/
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
