@@ -4,13 +4,13 @@ import { useRouter } from 'expo-router';
 import { Button } from '../src/components/common';
 import { colors, typography, spacing } from '../src/theme/tokens';
 
-export default function StampDoneScreen() {
+export default function StampDetailScreen() {
   const router = useRouter();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>スタンプを押しました！</Text>
-      <Button label="アルバムへ" onPress={() => router.push('/(tabs)/album')} />
+      <Text style={styles.title}>スタンプ詳細</Text>
+      <Button label="戻る" variant="ghost" onPress={() => router.back()} />
     </View>
   );
 }

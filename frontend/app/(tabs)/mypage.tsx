@@ -24,18 +24,18 @@ export default function MypageScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.gray50,
+    backgroundColor: colors.surface,
   },
   accountArea: {
     backgroundColor: colors.white,
-    padding: spacing[24],
-    marginBottom: spacing[16],
+    padding: spacing.xxl,
+    marginBottom: spacing.l,
     alignItems: 'center',
   },
   accountName: {
-    fontSize: typography.size.navH3,
-    fontWeight: typography.weight.semibold,
-    color: colors.originGray,
+    fontSize: typography.navTitle.fontSize,
+    fontWeight: typography.navTitle.fontWeight,
+    color: colors.textPrimary,
   },
   menu: {
     backgroundColor: colors.white,

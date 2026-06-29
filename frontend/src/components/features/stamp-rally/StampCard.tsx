@@ -23,17 +23,17 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     borderRadius: 40,
-    backgroundColor: colors.gray100,
+    backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
   },
   obtained: {
-    backgroundColor: colors.prime100,
+    backgroundColor: colors.border,
   },
   name: {
-    fontSize: typography.size.caption,
-    color: colors.originGray,
+    fontSize: typography.caption.fontSize,
+    color: colors.textPrimary,
     textAlign: 'center',
-    marginTop: spacing[8],
+    marginTop: spacing.s,
   },
 });

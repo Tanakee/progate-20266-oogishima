@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal as RNModal, View, TouchableOpacity, StyleSheet } from 'react-native';
-import { colors, spacing } from '../../theme/tokens';
+import { colors, radii, spacing } from '../../theme/tokens';
 
 type Props = {
   visible: boolean;
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
   },
   content: {
     backgroundColor: colors.white,
-    borderRadius: 12,
-    padding: spacing[24],
+    borderRadius: radii.card,
+    padding: spacing.xxl,
     width: '85%',
   },
 });
