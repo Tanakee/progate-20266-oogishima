@@ -5,8 +5,8 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: colors.prime500,
-        tabBarInactiveTintColor: colors.gray500,
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.textMuted,
       }}
     >
       <Tabs.Screen name="album" options={{ title: 'アルバム' }} />

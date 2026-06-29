@@ -18,14 +18,14 @@ export default function HelpScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.gray50,
+    backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: spacing[24],
+    gap: spacing.xxl,
   },
   title: {
-    fontSize: typography.size.sectionH3,
-    fontWeight: typography.weight.semibold,
-    color: colors.originGray,
+    fontSize: typography.screenTitle.fontSize,
+    fontWeight: typography.screenTitle.fontWeight,
+    color: colors.textPrimary,
   },
 });

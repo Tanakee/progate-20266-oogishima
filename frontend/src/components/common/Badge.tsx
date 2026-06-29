@@ -7,7 +7,7 @@ type Props = {
   color?: string;
 };
 
-export function Badge({ label, color = colors.prime500 }: Props) {
+export function Badge({ label, color = colors.primary }: Props) {
   return (
     <View style={[styles.badge, { backgroundColor: color + '22' }]}>
       <Text style={[styles.label, { color }]}>{label}</Text>
@@ -17,13 +17,13 @@ export function Badge({ label, color = colors.prime500 }: Props) {
 
 const styles = StyleSheet.create({
   badge: {
-    paddingVertical: spacing[4],
-    paddingHorizontal: spacing[8],
-    borderRadius: radii.small,
+    paddingVertical: spacing.xs,
+    paddingHorizontal: spacing.s,
+    borderRadius: radii.hint,
     alignSelf: 'flex-start',
   },
   label: {
-    fontSize: typography.size.caption,
-    fontWeight: typography.weight.semibold,
+    fontSize: typography.caption.fontSize,
+    fontWeight: typography.labelBold.fontWeight,
   },
 });

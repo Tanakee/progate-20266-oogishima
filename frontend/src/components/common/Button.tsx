@@ -26,19 +26,19 @@ export function Button({ label, onPress, variant = 'primary', disabled = false }
 
 const styles = StyleSheet.create({
   base: {
-    paddingVertical: spacing[16],
-    paddingHorizontal: spacing[32],
-    borderRadius: radii.pill,
+    paddingVertical: spacing.l,
+    paddingHorizontal: spacing.xxxl,
+    borderRadius: radii.button,
     alignItems: 'center',
     justifyContent: 'center',
   },
   primary: {
-    backgroundColor: colors.prime500,
+    backgroundColor: colors.primary,
   },
   secondary: {
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: colors.prime500,
+    borderColor: colors.primary,
   },
   ghost: {
     backgroundColor: 'transparent',
@@ -47,16 +47,16 @@ const styles = StyleSheet.create({
     opacity: 0.4,
   },
   label: {
-    fontSize: typography.size.ctaLabel,
-    fontWeight: typography.weight.semibold,
+    fontSize: typography.buttonLabel.fontSize,
+    fontWeight: typography.labelBold.fontWeight,
   },
   primaryLabel: {
     color: colors.white,
   },
   secondaryLabel: {
-    color: colors.prime500,
+    color: colors.primary,
   },
   ghostLabel: {
-    color: colors.originGray,
+    color: colors.textPrimary,
   },
 });
