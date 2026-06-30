@@ -1,5 +1,4 @@
-import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, ViewStyle } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { colors, typography, radii, spacing } from '../../theme/tokens';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
