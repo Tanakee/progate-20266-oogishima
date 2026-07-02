@@ -18,7 +18,7 @@ export default function CameraScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.surface,
+    backgroundColor: colors.bg,
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.xxl,
