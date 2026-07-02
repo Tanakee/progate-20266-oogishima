@@ -28,7 +28,7 @@ const FRAME_STYLES: FrameStyleOption[] = [
 const COLOR_OPTIONS = ['#333333', '#ff6b6b', '#fcc06d', '#6de8b9', '#6bc1ff', '#be91fa', '#ff94dd'];
 
 const meta = {
-  title: 'features/design-change/DesignChangeSheet',
+  title: 'features/camera/DesignChangeSheet',
   component: DesignChangeSheet,
   decorators: [
     (Story) => (
