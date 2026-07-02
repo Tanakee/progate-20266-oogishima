@@ -1,15 +1,16 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
-import { NavBar } from '../../src/components/common';
-import { colors } from '../../src/theme/tokens';
+import { Button } from '../../src/components/common';
+import { colors, typography, spacing } from '../../src/theme/tokens';
 
 export default function PrivacyScreen() {
   const router = useRouter();
 
   return (
     <View style={styles.container}>
-      <NavBar title="プライバシー" onBack={() => router.back()} />
+      <Text style={styles.title}>プライバシー</Text>
+      <Button label="戻る" variant="ghost" onPress={() => router.back()} />
     </View>
   );
 }
@@ -18,5 +19,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing.xxl,
+  },
+  title: {
+    fontSize: typography.screenTitle.fontSize,
+    fontWeight: typography.screenTitle.fontWeight,
+    color: colors.textPrimary,
   },
 });
