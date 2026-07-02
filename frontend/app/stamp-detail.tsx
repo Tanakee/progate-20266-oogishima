@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { StampDetailPhoto } from "../src/components/features/album/stamp-rally/StampDetailPhoto";
 import { StampInfoCard } from "../src/components/features/album/stamp-rally/StampInfoCard";
 import { DesignChangeSheet } from "../src/components/features/camera/DesignChangeSheet";
@@ -8,11 +9,12 @@ import { colors, radii, spacing } from "../src/theme/tokens";
 
 export default function StampDetailScreen() {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const [designSheetVisible, setDesignSheetVisible] = React.useState(false);
 
   return (
     <View style={styles.container}>
-      <View style={styles.topBar}>
+      <View style={[styles.topBar, { paddingTop: insets.top + spacing.xl }]}>
         <TouchableOpacity
           style={styles.iconButton}
           onPress={() => router.back()}

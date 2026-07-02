@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, radii, spacing } from '../../../theme/tokens';
 
 type Props = {
@@ -11,8 +12,9 @@ type Props = {
 };
 
 export function NavBar({ title, onBack, backIcon, rightIcon, onRightPress }: Props) {
+  const insets = useSafeAreaInsets();
   return (
-    <View style={styles.wrap}>
+    <View style={[styles.wrap, { paddingTop: insets.top + spacing.l }]}>
       {onBack ? (
         <TouchableOpacity style={styles.iconButton} onPress={onBack} activeOpacity={0.7}>
           {backIcon ?? <Text style={styles.iconGlyph}>‹</Text>}
