@@ -11,3 +11,5 @@ export { Header } from './Header';
 export { NavBar } from './NavBar';
 export { ConfirmDialog } from './ConfirmDialog';
 export { Stamp } from './Stamp';
+export { TabBar } from './TabBar';
+export type { TabBarIcon, TabBarItemData } from './TabBar';
