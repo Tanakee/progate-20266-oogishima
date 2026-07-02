@@ -10,11 +10,14 @@
 ```
 src/components/
   common/                 # 見た目のみの責務。ロジック・API呼び出しを持たない
-    Button.tsx
-    Card.tsx
-    Badge.tsx
-    Modal.tsx
-    ListItem.tsx
+    Button/
+      Button.tsx
+      Button.stories.tsx  # Button と同じフォルダに同居させる
+      index.ts            # export { Button } from './Button'
+    Card/
+      Card.tsx
+      Card.stories.tsx
+      index.ts
     index.ts               # barrel export。他からは必ずここ経由でimportする
   features/
     stamp-rally/
@@ -23,6 +26,12 @@ src/components/
     camera/
       ScanOverlay.tsx
 ```
+
+### コンポーネントとStorybookファイルの配置
+
+- コンポーネントごとに `コンポーネント名/` フォルダを作り、本体ファイルと `*.stories.tsx` を同じフォルダに同居させる（story を別階層の `.rnstorybook/stories/` にまとめない）
+- フォルダ内に `index.ts` を置き `export { Button } from './Button';` の形でre-exportする。これにより親の `components/common/index.ts` からの `import from './Button'` は変更不要になる
+- Storybook 側は `.rnstorybook/main.ts` の `stories` に `../src/components/**/*.stories.?(ts|tsx|js|jsx)` を指定し、この配置を自動検出する
 
 ### 分類基準
 - **common** : 「このコンポーネントはスタンプラリーの仕様を何も知らない」もの
