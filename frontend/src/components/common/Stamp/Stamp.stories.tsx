@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { Stamp } from './Stamp';
 
 const meta = {
-  title: 'features/camera/Stamp',
+  title: 'common/Stamp',
   component: Stamp,
   decorators: [
     (Story) => (
