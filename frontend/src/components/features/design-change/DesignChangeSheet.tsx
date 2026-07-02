@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { BottomSheet, SelectableTile, ColorSwatch, Toggle, Button } from '../../common';
+import { BottomSheet, SelectableTile, ColorSwatch, Toggle, CommonButton } from '../../common';
 import { colors, typography, spacing } from '../../../theme/tokens';
 
 export type FrameStyleOption = {
@@ -73,7 +73,7 @@ export function DesignChangeSheet({
         <Toggle value={showLandmarkName} onValueChange={onToggleShowLandmarkName} />
       </View>
 
-      <Button label="このデザインにする" onPress={onConfirm} variant="primary" />
+      <CommonButton label="このデザインにする" onPress={onConfirm} variant="primary" />
     </BottomSheet>
   );
 }

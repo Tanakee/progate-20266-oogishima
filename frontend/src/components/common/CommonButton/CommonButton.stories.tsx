@@ -2,12 +2,12 @@ import type { Meta, StoryObj } from '@storybook/react-native';
 import { View, Text } from 'react-native';
 import { fn } from 'storybook/test';
 
-import { Button } from './Button';
+import { CommonButton } from './CommonButton';
 import { colors } from '../../../theme/tokens';
 
 const meta = {
-  title: 'common/Button',
-  component: Button,
+  title: 'common/CommonButton',
+  component: CommonButton,
   decorators: [
     (Story) => (
       <View style={{ flex: 1, alignItems: 'flex-start', padding: 16 }}>
@@ -17,7 +17,7 @@ const meta = {
   ],
   tags: ['autodocs'],
   args: { onPress: fn(), label: 'Button' },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof CommonButton>;
 
 export default meta;
 

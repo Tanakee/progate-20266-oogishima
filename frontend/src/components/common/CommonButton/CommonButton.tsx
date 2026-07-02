@@ -13,7 +13,7 @@ type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-export function Button({
+export function CommonButton({
   label,
   onPress,
   variant = 'primary',

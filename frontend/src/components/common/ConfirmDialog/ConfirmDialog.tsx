@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Modal } from "../Modal";
-import { Button } from "../Button";
+import { CommonButton } from "../CommonButton";
 import { colors, typography, spacing } from "../../../theme/tokens";
 
 type Props = {
@@ -29,13 +29,13 @@ export function ConfirmDialog({
         <Text style={styles.message}>{message}</Text>
       </View>
       <View style={styles.buttonRow}>
-        <Button
+        <CommonButton
           label={cancelLabel}
           onPress={onCancel}
           variant="ghost"
           style={styles.flexButton}
         />
-        <Button
+        <CommonButton
           label={confirmLabel}
           onPress={onConfirm}
           variant="primary"
