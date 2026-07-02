@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { BottomSheet, SelectableTile, ColorSwatch, Toggle, CommonButton } from '../../common';
-import { colors, typography, spacing } from '../../../theme/tokens';
+import { BottomSheet, SelectableTile, ColorSwatch, Toggle, CommonButton } from '../../../../common';
+import { colors, typography, spacing } from '../../../../../theme/tokens';
 
 export type FrameStyleOption = {
   id: string;

@@ -1,1 +1,0 @@
-export { InstructionSheet } from './InstructionSheet';

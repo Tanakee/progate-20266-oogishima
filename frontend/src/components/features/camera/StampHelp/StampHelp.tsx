@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { colors, typography, radii, spacing } from '../../../../theme/tokens';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { colors, typography, radii, spacing } from "../../../../theme/tokens";
 
 type Step = {
   number: number;
@@ -8,9 +8,9 @@ type Step = {
 };
 
 const STEPS: Step[] = [
-  { number: 1, description: 'スマホを上に持ち上げる' },
-  { number: 2, description: '振り下げる' },
-  { number: 3, description: 'ぐっと押し込む' },
+  { number: 1, description: "スマホを上に持ち上げる" },
+  { number: 2, description: "振り下げる" },
+  { number: 3, description: "ぐっと押し込む" },
 ];
 
 type Props = {
@@ -18,7 +18,7 @@ type Props = {
   title?: string;
 };
 
-export function InstructionSheet({ visible, title = 'スタンプの押し方' }: Props) {
+export function StampHelp({ visible, title = "スタンプの押し方" }: Props) {
   if (!visible) {
     return null;
   }
@@ -53,18 +53,18 @@ const styles = StyleSheet.create({
     gap: spacing.l,
   },
   handle: {
-    alignSelf: 'center',
+    alignSelf: "center",
     width: 36,
     height: 4,
     borderRadius: 2,
     backgroundColor: colors.border,
   },
   header: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   title: {
     fontSize: typography.buttonLabel.fontSize + 3,
-    fontWeight: '600',
+    fontWeight: "600",
     color: colors.textPrimary,
   },
   divider: {
@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.border,
   },
   step: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: spacing.m,
   },
   badge: {
@@ -83,12 +83,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.primary,
     backgroundColor: colors.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   badgeLabel: {
     fontSize: 10,
-    fontWeight: '600',
+    fontWeight: "600",
     color: colors.primary,
   },
   description: {
