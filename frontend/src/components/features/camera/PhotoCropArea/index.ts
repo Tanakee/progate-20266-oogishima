@@ -1,0 +1,1 @@
+export { PhotoCropArea } from './PhotoCropArea';
