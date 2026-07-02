@@ -8,3 +8,6 @@ export { Toggle } from './Toggle';
 export { BottomSheet } from './BottomSheet';
 export { SelectableTile } from './SelectableTile';
 export { Header } from './Header';
+export { NavBar } from './NavBar';
+export { ConfirmDialog } from './ConfirmDialog';
+export { Stamp } from './Stamp';
