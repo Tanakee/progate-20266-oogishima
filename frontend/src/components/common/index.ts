@@ -3,3 +3,8 @@ export { Card } from './Card';
 export { Badge } from './Badge';
 export { Modal } from './Modal';
 export { ListItem } from './ListItem';
+export { ColorSwatch } from './ColorSwatch';
+export { Toggle } from './Toggle';
+export { BottomSheet } from './BottomSheet';
+export { SelectableTile } from './SelectableTile';
+export { Header } from './Header';
