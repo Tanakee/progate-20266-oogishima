@@ -60,7 +60,7 @@ src/components/
 
 以下を正式名として固定する。似た役割の別名コンポーネント（`CustomButton`, `MyCard`, `StampButton` 等）を新たに作らない。
 
-`Button`, `Card`, `Badge`, `Modal`, `ListItem`
+`Button`, `Card`, `Badge`, `Modal`, `ListItem`, `ColorSwatch`, `Toggle`, `BottomSheet`, `SelectableTile`, `Header`
 
 新しい基本パーツが必要になった場合は、このリストに追記してから作成する。
 
@@ -75,8 +75,13 @@ src/components/
 
 | コンポーネント | 役割 | variant | 使用箇所 |
 |---|---|---|---|
-| Button | 汎用ボタン | primary / secondary / ghost | - |
+| Button | 汎用ボタン | primary / secondary / ghost（icon prop対応） | - |
 | Card | 汎用カード | - | - |
 | Badge | - | - | - |
 | Modal | - | - | - |
 | ListItem | - | - | - |
+| ColorSwatch | 色選択ドット | selected | デザイン変更ボトムシート |
+| Toggle | ON/OFFトグルスイッチ | - | デザイン変更ボトムシート |
+| BottomSheet | 下からせり出すシートコンテナ | - | デザイン変更ボトムシート |
+| SelectableTile | 選択式サムネイルカード | selected | デザイン変更ボトムシート（フレームスタイル選択） |
+| Header | タイトル＋サブテキストの画面ヘッダー | - | アルバム画面 |
