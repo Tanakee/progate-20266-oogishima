@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-native';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { fn } from 'storybook/test';
 
 import { Button } from './Button';
+import { colors } from '../../../theme/tokens';
 
 const meta = {
   title: 'common/Button',
@@ -36,4 +37,12 @@ export const Ghost: Story = {
 
 export const Disabled: Story = {
   args: { variant: 'primary', disabled: true },
+};
+
+export const WithIcon: Story = {
+  args: {
+    variant: 'secondary',
+    label: 'デザインを変更する',
+    icon: <Text style={{ color: colors.secondary, fontSize: 14 }}>🎨</Text>,
+  },
 };
