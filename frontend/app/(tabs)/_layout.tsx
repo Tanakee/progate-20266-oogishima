@@ -1,5 +1,5 @@
-import { Tabs } from 'expo-router';
-import { colors } from '../../src/theme/tokens';
+import { Tabs } from "expo-router";
+import { colors } from "../../src/theme/tokens";
 
 export default function TabsLayout() {
   return (
@@ -9,8 +9,9 @@ export default function TabsLayout() {
         tabBarInactiveTintColor: colors.textMuted,
       }}
     >
-      <Tabs.Screen name="album" options={{ title: 'アルバム' }} />
-      <Tabs.Screen name="mypage" options={{ title: 'マイページ' }} />
+      <Tabs.Screen name="album" options={{ title: "カメラ" }} />
+      <Tabs.Screen name="album" options={{ title: "アルバム" }} />
+      <Tabs.Screen name="mypage" options={{ title: "マイページ" }} />
     </Tabs>
   );
 }

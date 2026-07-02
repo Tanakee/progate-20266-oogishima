@@ -9,6 +9,7 @@ export const colors = {
   border: '#c3d6cf',
   activeOverlay: 'rgba(51,51,51,0.08)',
   white: '#ffffff',
+  selectedRing: '#333333',
 };
 
 export const typography = {
