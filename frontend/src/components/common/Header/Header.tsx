@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '../../../theme/tokens';
 
 type Props = {
@@ -7,8 +8,9 @@ type Props = {
 };
 
 export function Header({ title, subtitle }: Props) {
+  const insets = useSafeAreaInsets();
   return (
-    <View style={styles.wrap}>
+    <View style={[styles.wrap, { paddingTop: insets.top + spacing.l }]}>
       <Text style={styles.title}>{title}</Text>
       {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
     </View>
@@ -18,7 +20,6 @@ export function Header({ title, subtitle }: Props) {
 const styles = StyleSheet.create({
   wrap: {
     gap: spacing.xs,
-    paddingTop: spacing.l,
     paddingHorizontal: spacing.xl,
     paddingBottom: spacing.m,
   },
