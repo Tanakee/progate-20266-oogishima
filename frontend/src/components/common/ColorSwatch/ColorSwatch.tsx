@@ -15,7 +15,7 @@ export function ColorSwatch({ color, selected = false, onPress }: Props) {
       activeOpacity={0.8}
       disabled={!onPress}
     >
-      <View style={[styles.dot, { backgroundColor: color }]} />
+      <View style={[styles.dot, selected && styles.dotSelected, { backgroundColor: color }]} />
     </TouchableOpacity>
   );
 }
@@ -36,5 +36,10 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderRadius: 15,
+  },
+  dotSelected: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
   },
 });
