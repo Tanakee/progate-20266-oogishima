@@ -31,3 +31,7 @@ export const WithImage: Story = {
     imageUri: 'https://picsum.photos/seed/skytree/260/260',
   },
 };
+
+export const Muted: Story = {
+  args: { size: 140, muted: true },
+};

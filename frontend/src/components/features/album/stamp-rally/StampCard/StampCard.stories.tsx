@@ -4,11 +4,11 @@ import { View } from 'react-native';
 import { StampCard } from './StampCard';
 
 const meta = {
-  title: 'features/stamp-rally/StampCard',
+  title: 'features/album/stamp-rally/StampCard',
   component: StampCard,
   decorators: [
     (Story) => (
-      <View style={{ flex: 1, alignItems: 'flex-start', padding: 16 }}>
+      <View style={{ width: 170, padding: 16 }}>
         <Story />
       </View>
     ),

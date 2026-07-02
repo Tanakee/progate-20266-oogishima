@@ -5,9 +5,10 @@ import { colors } from '../../../theme/tokens';
 type Props = {
   imageUri?: string;
   size?: number;
+  muted?: boolean;
 };
 
-export function Stamp({ imageUri, size = 260 }: Props) {
+export function Stamp({ imageUri, size = 260, muted = false }: Props) {
   const outerRingSize = size * 1.258;
   const innerRingSize = size * 1.154;
 
@@ -38,10 +39,16 @@ export function Stamp({ imageUri, size = 260 }: Props) {
           },
         ]}
       />
-      <View style={[styles.content, { width: size, height: size, borderRadius: size / 2 }]}>
+      <View
+        style={[
+          styles.content,
+          { width: size, height: size, borderRadius: size / 2 },
+          muted && styles.contentMuted,
+        ]}
+      >
         {imageUri ? (
           <Image source={{ uri: imageUri }} style={styles.image} />
-        ) : (
+        ) : muted ? null : (
           <Text style={styles.placeholder}>[撮影した画像]</Text>
         )}
       </View>
@@ -68,6 +75,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     overflow: 'hidden',
+  },
+  contentMuted: {
+    backgroundColor: colors.border,
   },
   image: {
     width: '100%',

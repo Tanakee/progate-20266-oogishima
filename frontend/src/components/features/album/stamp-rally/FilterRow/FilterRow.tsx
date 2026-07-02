@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { spacing } from '../../../../theme/tokens';
+import { spacing } from '../../../../../theme/tokens';
 import { FilterChip } from '../FilterChip';
 
 export type FilterOption = {

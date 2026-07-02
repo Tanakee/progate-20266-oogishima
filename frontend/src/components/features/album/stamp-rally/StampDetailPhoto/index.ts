@@ -1,0 +1,1 @@
+export { StampDetailPhoto } from './StampDetailPhoto';

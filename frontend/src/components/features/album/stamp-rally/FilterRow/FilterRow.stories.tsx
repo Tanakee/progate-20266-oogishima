@@ -13,7 +13,7 @@ const FILTERS: FilterOption[] = [
 ];
 
 const meta = {
-  title: 'features/stamp-rally/FilterRow',
+  title: 'features/album/stamp-rally/FilterRow',
   component: FilterRow,
   decorators: [
     (Story) => (

@@ -12,7 +12,7 @@ const STAMPS: StampGridItem[] = [
 ];
 
 const meta = {
-  title: 'features/stamp-rally/StampGrid',
+  title: 'features/album/stamp-rally/StampGrid',
   component: StampGrid,
   decorators: [
     (Story) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, typography, spacing } from '../../../../theme/tokens';
+import { colors, typography, spacing } from '../../../../../theme/tokens';
 
 type Props = {
   date: string;

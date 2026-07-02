@@ -5,7 +5,7 @@ import { fn } from 'storybook/test';
 import { FilterChip } from './FilterChip';
 
 const meta = {
-  title: 'features/stamp-rally/FilterChip',
+  title: 'features/album/stamp-rally/FilterChip',
   component: FilterChip,
   decorators: [
     (Story) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { colors, typography, radii } from '../../../../theme/tokens';
+import { colors, typography, radii } from '../../../../../theme/tokens';
 
 type Props = {
   label: string;

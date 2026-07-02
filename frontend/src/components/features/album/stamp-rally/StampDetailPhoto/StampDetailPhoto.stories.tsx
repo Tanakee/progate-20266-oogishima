@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react-native';
 import { View } from 'react-native';
 import { fn } from 'storybook/test';
 
-import { FilterChip } from './FilterChip';
+import { StampDetailPhoto } from './StampDetailPhoto';
 
 const meta = {
-  title: 'features/stamp-rally/FilterChip',
-  component: FilterChip,
+  title: 'features/album/stamp-rally/StampDetailPhoto',
+  component: StampDetailPhoto,
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
@@ -15,8 +15,11 @@ const meta = {
     ),
   ],
   tags: ['autodocs'],
-  args: { label: 'すべて', onPress: fn() },
-} satisfies Meta<typeof FilterChip>;
+  args: {
+    spotName: '東京スカイツリー',
+    onPressDesignChange: fn(),
+  },
+} satisfies Meta<typeof StampDetailPhoto>;
 
 export default meta;
 
@@ -24,10 +27,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
-export const Selected: Story = {
-  args: { selected: true },
-};
-
-export const Add: Story = {
-  args: { label: '+', variant: 'add' },
+export const WithPhoto: Story = {
+  args: { imageUri: 'https://picsum.photos/seed/skytree/260/260' },
 };

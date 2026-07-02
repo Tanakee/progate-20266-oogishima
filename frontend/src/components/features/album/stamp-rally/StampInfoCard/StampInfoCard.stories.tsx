@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { StampInfoCard } from './StampInfoCard';
 
 const meta = {
-  title: 'features/stamp-rally/StampInfoCard',
+  title: 'features/album/stamp-rally/StampInfoCard',
   component: StampInfoCard,
   decorators: [
     (Story) => (

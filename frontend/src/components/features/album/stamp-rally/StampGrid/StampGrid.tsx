@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, View, Text, StyleSheet } from 'react-native';
 import { StampCard } from '../StampCard';
-import { colors, typography, spacing } from '../../../../theme/tokens';
+import { colors, typography, spacing } from '../../../../../theme/tokens';
 
 export type StampGridItem = {
   id: string;
